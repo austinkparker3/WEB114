@@ -1,0 +1,65 @@
+<!--Austin Parker.05032026-->
+<!DOCTYPE HTML>
+<!-- Austin Parker  -->
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="moods.css">
+<title>Understanding the Interation Between DOM and JS</title>
+<meta charset="utf-8">
+<!-- External JavaScript file -->
+<script src="moods.js" defer></script>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #f0f8ff;
+    }
+    h1 { color: #2c3e50; }
+  </style>
+</head>
+<body>
+
+    <h1>Project 7--DOM and JS</h1>
+
+<!-- Questions Section -->
+
+    <section>
+            <h2>Javascript Questions</h2>
+
+          <p><strong>1. Why is textConnect safer than innerHTML?</strong></p>
+
+          <p><strong>Answer:</strong> TextConnect treats everything as plain text, which does not execute scripts or HTML, whereas HTML treats input as HTML Code.
+            This parses and renders the script, allowing for the execution of hacked or malicious scripts.</p> 
+
+          <p><strong>2. How are HTML elements connected to JavaScript variables using DOM selection?</strong></p>
+
+          <p><strong>Answer:</strong> HTML elements get connected to JavaScript variables via the DOM - Document Object Model - which allows JavaScript
+            to locate elements in the webpage and store references to them within variables.</p> 
+
+          <p><strong>3. What would happen to the text box with id="text" if I added this line to the Code above it:</strong></p>
+
+            <pre>
+            text.textContent = "Hello!"
+            </pre>
+            
+          <p><strong>Answer:</strong> The word "Hello" would completely overwrite the word "text" within the element.</p> 
+  
+
+    </section>
+
+  </style>
+
+</body>
+
+    <h1 id="moodDisplay" ></h1>
+
+      <p id="message">Choose a mood to begin!</p>
+        
+      <button id="happyBtn">Happy</button>
+      <button id="calmBtn">Calm</button>
+      <button id="angryBtn">Angry</button>
+      <button id="sleepyBtn">Sleepy</button>
+
+</html>
