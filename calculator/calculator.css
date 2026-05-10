@@ -1,0 +1,35 @@
+   /* CSS file for Calculator Final Project */
+   /* --Austin Parker.05092026-- */   
+
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      margin: 0;
+    }
+
+    main {
+      background-color: white;
+      border-radius: 12px;
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 30px;
+    }
+
+    button {
+      cursor: pointer;
+      margin: 8px;
+      padding: 12px 18px;
+    }
+
+    input {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+    }
+
+    #result {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
